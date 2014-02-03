@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+    font-family: "Helvetica Neue",helvetica,arial,verdana,sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 2.0em;
+}
+
+#content {
+    margin:0 auto;
+    width: 900px;
+    min-height:450px;
+} 
+
+#footer {
+    background: #222;
+    width: 900px;
+}
+
+
+#note {
+    font-family: "Helvetica Neue",helvetica,arial,verdana,sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    width: 700px;
+    padding: 5px 20px 0 0;
+    float: left;
+    text-align: right;
+    overflow:hidden;
+}
+
+#logo {
+    width: 169px;
+    padding: 10px 0 0 0;
+    overflow:hidden;
+}

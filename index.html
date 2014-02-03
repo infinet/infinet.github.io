@@ -2,13 +2,49 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <style type="text/css">
-       h1 {text-align: center;
-	       font-family: "Helvetica Neue",helvetica,arial,verdana,sans-serif;
-           color: rgb(0, 0, 0);
-           font-size: 6.5em;}
-    </style>
-  <title>Welcome</title></head>
+  <link type="text/css" href="css/style.css" media="all" rel="stylesheet">
+  <title>iCalendar格式的中国农历 节气 及传统节日</title>
+</head>
 <body>
-    <h1>Hello World</h1>
+    <div id="content">
+<h1>iCalendar格式的中国农历 节气 及传统节日</h1>
+
+<p>iCalendar是一种通用的日历交换格式，很多软件和设备，比如google calendar, apple calendar, thunderbird + lightning插件, iphone/ipad, 安卓都支持。</p>
+<p>以前订过iCalendar格式农历日历，但慢慢地它们都停止了更新。感谢<a href="http://gb.weather.gov.hk/gts/time/conversionc.htm">香港天文台</a>为公众提供了从1901年到2100年间两百年的农历-公历对照表，也就是这里用到的数据。</p>
+<h3>用法:</h3>
+<p>下载覆盖前年、今年以及明年三年的日历<a href="https://raw.github.com/infinet/lunar-calender/master/chinese_lunar_prev_year_next_year.ics">ics文件</a>，把它加入到你最常用的软件，或者直接在软件里订阅这个ics文件的链接，这样以后可以自动更新。</p>
+
+
+<p><img src="images/lunar_calendar.jpg" alt="lightning-screenshot" style="max-width:100%;"></p>
+
+
+<p>苹果设备上应该是: <br />
+ 设置 => 邮件、通讯录、日历 => 添加账户  => 日历 添加已订阅日历</p>
+
+ <p>如果在Mac的<a href="http://support.apple.com/kb/HT5029?viewlocale=zh_CN">iCal里订阅到iCloud</a>，这个日历还可以自动推送到所有使用那个iCloud账户的ios设备。</p>
+
+ <h3>生成更长时段农历</h3>
+
+ <p>如果你需要更长时段的农历，请到<a href="https://github.com/infinet/lunar-calender">农历项目主页</a>下载<code>lunar_ical.py</code></p>
+
+ <p>直接运行<code>./lunar_ical.py</code>会从香港天文台抓取1901到2100年间所有数据，然后生成上面那个前后三年时段的农历ics文件；</p>
+
+ <p>使用参数<code>--start</code>和<code>--end</code>指定需要的起至日期, 例如:</p>
+
+ <pre><code>./lunar_ical.py --start=2010-05-01 --end=2021-12-31 </code></pre>
+
+<p><a href="mailto: weichen302@gmail.com">Contact me</a></p>
+
+
+
+<p>
+<div id="footer">
+    <div id="note">Powered by</div>
+
+    <div id="logo">
+    <a href="http://pages.github.com/"><img src="http://pages.github.com/images/logo.svg" alt="GitHub Pages"></a>
+    </div>
+</p>
+
+</div>
 </body></html>
