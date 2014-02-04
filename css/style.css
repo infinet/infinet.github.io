@@ -1,6 +1,10 @@
+html,body {
+    font-family: helvetica,arial,verdana,sans-serif;
+    font-size: 16px;
+}
+
 h1 {
     text-align: center;
-    font-family: "Helvetica Neue",helvetica,arial,verdana,sans-serif;
     color: rgb(0, 0, 0);
     font-size: 2.0em;
 }
@@ -16,9 +20,7 @@ h1 {
     width: 900px;
 }
 
-
 #note {
-    font-family: "Helvetica Neue",helvetica,arial,verdana,sans-serif;
     font-size: 1.5em;
     font-weight: bold;
     color: #ffffff;
