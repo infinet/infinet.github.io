@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link type="text/css" href="css/style.css" rel="stylesheet">
-  <title>iCalendar格式的中国农历、节气、及传统节日</title>
+  <title>中国农历、节气、及传统节日的ics文件</title>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -33,13 +33,23 @@
 
 <h3>生成更长时段农历</h3>
 
-<p>如果需要更长时段的农历，请到<a href="https://github.com/infinet/lunar-calender">农历项目主页</a>下载<code>lunar_ical.py</code></p>
+<p>如果需要更长时段的农历，请到<a href="https://github.com/infinet/lunar-calendar">农历项目主页</a>下载<code>lunar_ical.py及相关文件</code></p>
 
 <p>直接运行<code>./lunar_ical.py</code>会从香港天文台抓取1901到2100年间所有数据，然后生成上面那个前后三年时段的农历ics文件；</p>
 
 <p>使用参数<code>--start</code>和<code>--end</code>指定需要的起至日期, 例如:</p>
 
 <pre><code>./lunar_ical.py --start=2010-05-01 --end=2021-12-31 </code></pre>
+
+
+<p>超出1901-2100的农历数据使用<a href="ftp://ftp.imcce.fr/pub/ephem/planets/vsop87">VSOP87行星理论</a>和<a href="http://www.aanda.org/articles/aa/full/2007/33/aa7568-07/aa7568-07.html">LEA-406月球理论</a>生成。 以香港天文台的数据为标准，用此法生成的1949到2100年间农历有两处不一致：</p>
+
+<p> 1）1979-01-20 大寒</p>
+
+<p> 2）2057-09-29 农历九月全部日期错位一天</p>
+
+上面两处节气及新月正好在午夜时分，数秒的计算误差就能左右该节气或新月属于前日深夜还是次日凌晨。
+
 
 <p><a href="mailto: weichen302@gmail.com">Contact me</a></p>
 
